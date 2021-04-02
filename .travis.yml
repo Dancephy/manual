@@ -6,7 +6,7 @@ dist: xenial
 cache:
   pip: true
 
-if: type != pull_request AND branch =~ /^(main|manual-.*)$/
+if: type != pull_request AND branch =~ /^(main|\d+.\d+)$/
 
 install:
 - pip install -r requirements.txt
